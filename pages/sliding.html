@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Udemy HTML</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    #textBox{
+      width:80px;
+      height:80px;
+      display:none;
+      background-color:blueviolet;
+    }
+  </style>
+   
+    </script>
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <script>
+      $("document").ready(function(){
+                  
+          $("#slide-up").click(function() {
+              $("#textBox").slideUp("9000");
+          });
+
+          $("#slide-down").click(function() {
+              $("#textBox").slideDown("9000");
+          });
+          $("#toggleSlide").click(function() {
+              $("#textBox").slideToggle("5000", function(){
+                alert("Done na Jabits Singson AKA BOSSING");
+              });
+          });
+
+     
+
+     });
+
+    </script>
+  </head>
+  <body>
+          <b>JQuery Sliding function</b><br><br>
+
+          <button id="slide-up">Click to Slide UP</button> |  <button id="slide-down">Click to Slide Down</button>  <button id="toggleSlide">Click to ToggleSlide</button> 
+        
+         
+
+          <div id="textBox" style="width:80px;height:80px;display:none;background-color:red;">
+
+          </div> <br>
+
+         
+
+        
+  
+  </body>
+  <script src="/js/bootstrap.js"></script>
+</html>
+
+<!--
+ 
+
+-->
+
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Udemy HTML</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+  
+    <style>
+      .colorBox{
+        color:cyan;
+      }
+    </style>
+  
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <script>
+      $("document").ready(function(){
+           
+          $(".add-class").click(function() {
+            $("p:last").addClass('colorBox');
+          });
+
+          $(".remove-class").click(function() {
+            $("p:last").removeClass('colorBox');
+          });
+
+          $(".toggle-class").click(function() {
+            $("p:nth-child(5)").toggleClass('colorBox');
+          });
+
+          $(".increase-class").click(function() {
+            $("p:first").css("font-size", "+=1px" ,"font-weight" , "bolder");
+          });
+
+          $(".btnReset").click(function() {
+            $("p:first").css("font-size", "-=1px" ,"font-weight" , "bolder");
+          });
+     });
+
+    </script>
+  </head>
+  <body>
+          <b>JQuery Selector function</b><br><br>
+
+      <button class="add-class">ADD CLASS</button> |  <button class="remove-class">Remove CLASS</button> |  <button class="toggle-class">Toggle</button> |  <button class="increase-class">Increase Class</button>
+      | <button class="btnReset">ResetNani?</button>
+      
+
+   <div class="container" style="margin-Top: 50px;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p>
+        </div>
+
+        
+  
+  </body>
+  <script src="/js/bootstrap.js"></script>
+</html>
+
+<!--
+ 
+   $("p:contains('JQUERY YARN')").css("border", "3.5px red dotted");
+         $("p:first-child").css("border", "3.5px red dotted");
+          $("p:last-of-type").css("border", "3.5px red dotted");
+       
+-->
+
+

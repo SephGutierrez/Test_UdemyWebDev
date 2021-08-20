@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Udemy HTML</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+   
+    </script>
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <script>
+      $("document").ready(function(){
+                  
+        $("#btnBox").click(function(){
+            $(".container1").fadeToggle(3000);
+            $(".container2").fadeToggle(6000);
+            $(".container3").fadeToggle(9000);
+      });
+
+     
+
+     });
+
+    </script>
+  </head>
+  <body>
+          <b>JQuery Fading function</b><br><br>
+
+          <button id="btnBox">Click to Fade In/Fade Out Toggle</button> 
+        
+         
+
+          <div class="container1" style="width:80px;height:80px;display:none;background-color:blueviolet;">
+
+          </div> <br>
+
+          <div class="container2" style="width:80px;height:80px;display:none;background-color:aqua;">
+            
+          </div><br>
+
+          <div class="container3" style="width:80px;height:80px;display:none;background-color:brown;">
+            
+          </div><br>
+
+
+        
+  
+  </body>
+  <script src="/js/bootstrap.js"></script>
+</html>
+
+<!--
+   //FADE IN CLICK
+
+   $(".container1").fadeIn();
+    $(".container2").fadeIn("slow");
+    $(".container3").fadeIn(3000);
+
+
+    //FADE OUT CLICK
+
+    $(".container1").fadeOut();
+    $(".container2").fadeOut("slow");
+    $(".container3").fadeOut(3000);
+-->

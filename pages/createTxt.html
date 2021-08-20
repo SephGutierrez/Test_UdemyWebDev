@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Udemy HTML</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+  
+    <style>
+      #textBox{
+        width: 300px;
+        height: 300px;
+        background-color: cyan;
+        position: absolute;
+        margin-top: 25px;
+        font-size: 12px;
+      }
+    </style>
+  
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <script>
+      $("document").ready(function(){
+              $(".createTxt").click(function() {
+                  $(".container p:first").text("I'm a Web Developer");
+                });
+                
+                  $(".createVar").click(function() {
+                      var newText = $('.container p:first');
+                  $(".container p:last").html(newText);    
+              });
+
+              
+              $(".create_Txt").click(function() {
+                $(".container").append("Hello world! <br>");
+              });
+            
+     });
+
+    </script>
+  </head>
+  <body>
+          <b>JQuery Selector function</b><br><br>
+
+      <button class="createTxt">CreateTxt</button>
+     |  <button class="create_Txt">Create_Txt</button> |
+       <button class="createVar">CreateVar</button>
+
+
+         <div class="container" style="margin-Top: 50px;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, veritatis.</p>
+        </div>
+
+        
+  
+  </body>
+  <script src="/js/bootstrap.js"></script>
+</html>
+
+<!--
+ 
+   $("p:contains('JQUERY YARN')").css("border", "3.5px red dotted");
+         $("p:first-child").css("border", "3.5px red dotted");
+          $("p:last-of-type").css("border", "3.5px red dotted");
+       
+-->
+
+
